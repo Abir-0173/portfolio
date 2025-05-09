@@ -1,0 +1,93 @@
+.skills {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    box-shadow: #e5e5e5 0px 0px 10px 2px;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    box-shadow: #e5e5e5 0px 0px 10px 2px;
+    margin: auto;
+}
+
+.card h3 {
+    margin: 5px 0;
+}
+
+.card {
+    width: 80px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.skill h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------     media query      --------------------- */
+@media (max-width:850px) {
+    .skill {
+        grid-template-columns: auto;
+    }
+
+    .card {
+        width: 80px;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .skill h2 {
+        font-size: 22px;
+        font-weight: 500px;
+    }
+
+
+
+}
+
+@media (max-width:650px) {
+    .card {
+        width: 50px;
+    }
+
+    .gallery {
+        gap: 12px;
+    }
+
+    .card h3 {
+        font-size: 11px;
+    }
+
+    .skill h2 {
+        font-size: 22px;
+        font-weight: 500px;
+    }
+}
